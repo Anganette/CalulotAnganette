@@ -28,14 +28,14 @@ public class Index extends JFrame {
 
 	public Index() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 750, 650);
+		setBounds(100, 100, 751, 651);
 		setTitle("Student Management");
 
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 
 		JMenu menuFile = new JMenu("File");
-		menuFile.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+		menuFile.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		menuBar.add(menuFile);
 
 		JMenuItem menuLogout = new JMenuItem("Logout");
@@ -49,7 +49,7 @@ public class Index extends JFrame {
 		});
 
 		JMenu menuHelp = new JMenu("Help");
-		menuHelp.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+		menuHelp.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		menuBar.add(menuHelp);
 		
 		JMenuItem mntmNewMenuItem = new JMenuItem("About");
@@ -61,58 +61,58 @@ public class Index extends JFrame {
 		contentPane.setLayout(null);
 
 		JLabel lblId = new JLabel("ID:");
-		lblId.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblId.setBounds(50, 62, 45, 17);
+		lblId.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblId.setBounds(51, 63, 46, 18);
 		contentPane.add(lblId);
 
 		idField = new JTextField();
-		idField.setBounds(100, 62, 96, 19);
+		idField.setBounds(100, 63, 97, 20);
 		contentPane.add(idField);
 		idField.setColumns(10);
 
 		JLabel lblName = new JLabel("Name:");
-		lblName.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblName.setBounds(50, 124, 45, 17);
+		lblName.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblName.setBounds(51, 125, 46, 18);
 		contentPane.add(lblName);
 
 		nameField = new JTextField();
-		nameField.setBounds(100, 122, 220, 19);
+		nameField.setBounds(100, 123, 221, 20);
 		contentPane.add(nameField);
 		nameField.setColumns(10);
 
 		JLabel lblGmail = new JLabel("Gmail:");
-		lblGmail.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblGmail.setBounds(50, 157, 45, 17);
+		lblGmail.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblGmail.setBounds(51, 158, 46, 18);
 		contentPane.add(lblGmail);
 
 		emailField = new JTextField();
-		emailField.setBounds(100, 155, 220, 19);
+		emailField.setBounds(100, 156, 221, 20);
 		contentPane.add(emailField);
 		emailField.setColumns(10);
 
 		JLabel lblCourse = new JLabel("Course:");
-		lblCourse.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblCourse.setBounds(50, 191, 62, 17);
+		lblCourse.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblCourse.setBounds(51, 192, 63, 18);
 		contentPane.add(lblCourse);
 
 		courseField = new JTextField();
-		courseField.setBounds(100, 189, 220, 19);
+		courseField.setBounds(100, 190, 221, 20);
 		contentPane.add(courseField);
 		courseField.setColumns(10);
 
 		JLabel lblSearchName = new JLabel("Search name:");
-		lblSearchName.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblSearchName.setBounds(33, 248, 90, 17);
+		lblSearchName.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblSearchName.setBounds(34, 249, 91, 18);
 		contentPane.add(lblSearchName);
 
 		searchField = new JTextField();
-		searchField.setBounds(118, 248, 96, 19);
+		searchField.setBounds(119, 249, 97, 20);
 		contentPane.add(searchField);
 		searchField.setColumns(10);
 
 		JButton btnSearch = new JButton("Search");
-		btnSearch.setFont(new Font("Tahoma", Font.BOLD, 10));
-		btnSearch.setBounds(243, 240, 85, 33);
+		btnSearch.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnSearch.setBounds(244, 241, 86, 34);
 		contentPane.add(btnSearch);
 
 		btnSearch.addActionListener(e -> {
@@ -133,13 +133,13 @@ public class Index extends JFrame {
 		table = new JTable(tableModel);
 
 		JScrollPane scrollPane = new JScrollPane(table);
-		scrollPane.setBounds(29, 328, 670, 241);
+		scrollPane.setBounds(30, 329, 671, 242);
 		contentPane.add(scrollPane);
 
 		
 		JButton btnAdd = new JButton("Add");
-		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 10));
-		btnAdd.setBounds(33, 285, 85, 33);
+		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnAdd.setBounds(34, 286, 86, 34);
 		contentPane.add(btnAdd);
 
 		btnAdd.addActionListener(e -> {
@@ -157,8 +157,8 @@ public class Index extends JFrame {
 
 		
 		JButton btnDelete = new JButton("Delete");
-		btnDelete.setFont(new Font("Tahoma", Font.BOLD, 10));
-		btnDelete.setBounds(129, 285, 85, 33);
+		btnDelete.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnDelete.setBounds(129, 286, 85, 34);
 		contentPane.add(btnDelete);
 
 		btnDelete.addActionListener(e -> {
@@ -173,8 +173,8 @@ public class Index extends JFrame {
 
 		
 		JButton btnEdit = new JButton("Edit");
-		btnEdit.setFont(new Font("Tahoma", Font.BOLD, 10));
-		btnEdit.setBounds(243, 285, 85, 33);
+		btnEdit.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnEdit.setBounds(244, 286, 86, 34);
 		contentPane.add(btnEdit);
 
 		btnEdit.addActionListener(e -> {
@@ -211,7 +211,7 @@ public class Index extends JFrame {
 		
 		JButton btnPrint = new JButton("Print");
 		btnPrint.setFont(new Font("Tahoma", Font.BOLD, 10));
-		btnPrint.setBounds(446, 285, 85, 33);
+		btnPrint.setBounds(447, 286, 86, 34);
 		contentPane.add(btnPrint);
 
 		btnPrint.addActionListener(e -> {
