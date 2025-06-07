@@ -127,7 +127,7 @@ public class Index extends JFrame {
 			JOptionPane.showMessageDialog(this, "No record found!");
 		});
 
-		// Table
+		
 		String[] columnNames = {"ID", "Name", "Gmail", "Course"};
 		tableModel = new DefaultTableModel(columnNames, 0);
 		table = new JTable(tableModel);
@@ -136,7 +136,7 @@ public class Index extends JFrame {
 		scrollPane.setBounds(29, 328, 670, 241);
 		contentPane.add(scrollPane);
 
-		// Button Add
+		
 		JButton btnAdd = new JButton("Add");
 		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 10));
 		btnAdd.setBounds(33, 285, 85, 33);
@@ -155,7 +155,7 @@ public class Index extends JFrame {
 			clearFields();
 		});
 
-		// Button Delete
+		
 		JButton btnDelete = new JButton("Delete");
 		btnDelete.setFont(new Font("Tahoma", Font.BOLD, 10));
 		btnDelete.setBounds(129, 285, 85, 33);
@@ -171,7 +171,7 @@ public class Index extends JFrame {
 			}
 		});
 
-		// Button Edit
+		
 		JButton btnEdit = new JButton("Edit");
 		btnEdit.setFont(new Font("Tahoma", Font.BOLD, 10));
 		btnEdit.setBounds(243, 285, 85, 33);
@@ -189,7 +189,7 @@ public class Index extends JFrame {
 			}
 		});
 
-		// Button Update
+		
 		JButton btnUpdate = new JButton("Update");
 		btnUpdate.setFont(new Font("Tahoma", Font.BOLD, 10));
 		btnUpdate.setBounds(338, 285, 85, 33);
@@ -208,7 +208,7 @@ public class Index extends JFrame {
 			}
 		});
 
-		// Button Print
+		
 		JButton btnPrint = new JButton("Print");
 		btnPrint.setFont(new Font("Tahoma", Font.BOLD, 10));
 		btnPrint.setBounds(446, 285, 85, 33);
